@@ -38,6 +38,7 @@ button {
   padding: 8px 12px;
   border-radius: 8px;
   border: 0;
+  margin: 5px;
   background: #2b6ef6;
   color: white;
   cursor: pointer;
@@ -50,6 +51,7 @@ button:hover {
 .opt {
   text-align: left;
   background: #eef2ff;
+  color: #666;
   border: 1px solid #d3dbff;
   padding: 10px;
   border-radius: 8px;

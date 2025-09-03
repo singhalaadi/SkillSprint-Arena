@@ -90,8 +90,8 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>SkillSprint Arena — Demo</h1>
-      <p className="muted">Micro-learning + real-time duel (demo)</p>
+      <h1>SkillSprint Arena</h1>
+      <p className="muted">Micro-learning + real-time duel</p>
 
       {status === "not-connected" && (
         <div className="card">
@@ -100,7 +100,7 @@ export default function App() {
             value={username}
             onChange={e => setUsername(e.target.value)}
           />
-          <div style={{display:"flex", gap:10, marginTop:10}}>
+          <div style={{display:"flex", gap:15, marginTop:10}}>
             <button onClick={joinLobby}>Quick Match</button>
             <button onClick={requestLeaderboard}>Refresh Leaderboard</button>
           </div>
@@ -163,22 +163,22 @@ export default function App() {
         </ol>
       </div>
 
-      <div className="footer muted">Demo server: {SERVER}</div>
+      <div className="footer muted">Server: {SERVER}</div>
     </div>
   );
 }
 
 function Question({ q, qIndex, total, onAnswer }) {
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(15);
   const timerRef = useRef(null);
   const startTsRef = useRef(Date.now());
 
   useEffect(() => {
-    setTimeLeft(10);
+    setTimeLeft(15);
     startTsRef.current = Date.now();
     timerRef.current = setInterval(() => {
       const elapsed = Math.floor((Date.now() - startTsRef.current) / 1000);
-      setTimeLeft(10 - elapsed);
+      setTimeLeft(15 - elapsed);
     }, 200);
 
     return () => clearInterval(timerRef.current);

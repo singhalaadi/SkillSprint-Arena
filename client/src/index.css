@@ -1,0 +1,78 @@
+body {
+  font-family: Inter, system-ui, Arial;
+  background: #f2f4f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+}
+
+.muted {
+  color: #666;
+  font-size: 13px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 6px 18px rgba(20, 20, 20, 0.06);
+}
+
+input {
+  padding: 8px 10px;
+  width: 320px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  background: #2b6ef6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.opt {
+  text-align: left;
+  background: #eef2ff;
+  border: 1px solid #d3dbff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.opt:hover {
+  transform: translateY(-1px);
+}
+
+.score-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.leaderboard ol {
+  padding-left: 18px;
+}
+
+.footer {
+  margin-top: 18px;
+  font-size: 12px;
+}
